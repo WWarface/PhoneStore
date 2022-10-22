@@ -25,3 +25,15 @@ C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore
 C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.genruntimeconfig.cache
 C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\ref\PhoneStore.dll
 C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\libman.json
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\PhoneStore.Services.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\MimeKit.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\MailKit.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\PhoneStore.Services.pdb
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\PhoneStore.Services.dll.config
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\MimeKit.pdb
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\MimeKit.xml
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\MailKit.pdb
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\MailKit.xml
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\BouncyCastle.Crypto.xml
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.csproj.CopyComplete

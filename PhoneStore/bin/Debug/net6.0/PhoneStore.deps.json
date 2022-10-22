@@ -7,8 +7,40 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "PhoneStore/1.0.0": {
+        "dependencies": {
+          "PhoneStore.Services": "1.0.0"
+        },
         "runtime": {
           "PhoneStore.dll": {}
+        }
+      },
+      "PhoneStore.Services/1.0.0": {
+        "runtime": {
+          "PhoneStore.Services.dll": {}
+        }
+      },
+      "MimeKit/3.4.0.0": {
+        "runtime": {
+          "MimeKit.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.1.0"
+          }
+        }
+      },
+      "MailKit/3.4.0.0": {
+        "runtime": {
+          "MailKit.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.1.0"
+          }
+        }
+      },
+      "BouncyCastle.Crypto/1.9.0.0": {
+        "runtime": {
+          "BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.0.1"
+          }
         }
       }
     }
@@ -16,6 +48,26 @@
   "libraries": {
     "PhoneStore/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PhoneStore.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MimeKit/3.4.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MailKit/3.4.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BouncyCastle.Crypto/1.9.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
