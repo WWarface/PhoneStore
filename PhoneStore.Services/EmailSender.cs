@@ -28,8 +28,8 @@ namespace PhoneStore.Services
             };
             using (var client = new SmtpClient())
             {
-                await client.ConnectAsync("smtp.gmail.com", 465);
-                await client.AuthenticateAsync("2003harik2003@gmail.com", "zprklwaigmnmfbgd");
+                await client.ConnectAsync("smtp.gmail.com", int.Parse(_config.GetSection("ConnectionStrings:Port").Value));
+                await client.AuthenticateAsync("2003harik2003@gmail.com", _config.GetSection("ConnectionStrings:Key").Value);
                 await client.SendAsync(emailMessage);
 
                 await client.DisconnectAsync(true);
