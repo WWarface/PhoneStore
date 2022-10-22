@@ -60,5 +60,31 @@ namespace WebServicesProject.Controllers
             await _emailSender.SendEmailAsync("2003harik20032@gmail.com", "LAB2", message);
             return RedirectToAction("Index");
         }
+        public IActionResult FileLoad()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> FileLoad(List<IFormFile> files)
+        {
+            var size = files.Sum(f => f.Length);
+
+            var filePaths = new List<string>();
+            foreach (var formFile in files)
+            {
+                if (formFile.Length > 0)
+                {
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory() + "/wwwroot/Files", formFile.FileName);
+                    filePaths.Add(filePath);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await formFile.CopyToAsync(stream);
+                    }
+                }
+            }
+            return View();
+        }
     }
 }

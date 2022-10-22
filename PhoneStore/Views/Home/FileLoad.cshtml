@@ -1,0 +1,23 @@
+﻿<div style="width: 100%;height: 560px; display: flex; justify-content: center; align-items: center;">
+<form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="FileLoad">
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Завантажуйте файли використавши цю форму</p>
+            <input type="file" name="files" multiple></input>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="Upload" /><br></br>            
+        </div>
+    </div>
+</form>
+    <div><a href="/pages" style="font-family: "Seaweed Script";
+                 color: #fff;
+                 text-align: center;
+                 font-size: 50px;
+                 position: relative;
+                 margin:0;">Переглянути файли</a>
+     </div>
+</div>
+
