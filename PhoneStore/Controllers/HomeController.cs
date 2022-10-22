@@ -57,7 +57,7 @@ namespace WebServicesProject.Controllers
             _logger.LogInformation($"time - {DateTime.Now.ToShortTimeString()};path -  {HttpContext.Request.Host}{HttpContext.Request.Path}{HttpContext.Request.QueryString}; remoteIP -  {_contextAccessor?.HttpContext?.Connection.RemoteIpAddress}");
 
             string message = $"Hi, its {mailData.Name}!\n{mailData.Message}\nMy phone is: {mailData.Phone}, email: {mailData.Email}";
-            await _emailSender.SendEmailAsync("matyiokin2002@gmail.com", "LAB2", message);
+            await _emailSender.SendEmailAsync("2003harik20032@gmail.com", "LAB2", message);
             return RedirectToAction("Index");
         }
     }
