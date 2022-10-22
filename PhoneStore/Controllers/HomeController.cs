@@ -8,54 +8,39 @@ namespace WebServicesProject.Controllers
     public class HomeController : Controller
     {
         private readonly IEmailSender _emailSender;
-        private readonly ILogger<HomeController> _logger;
-        private readonly IHttpContextAccessor _contextAccessor;
-        public HomeController(IEmailSender emailSender, ILogger<HomeController> logger, IHttpContextAccessor contextAccessor)
+
+        public HomeController(IEmailSender emailSender)
         {
-            _contextAccessor = contextAccessor;
-            _logger = logger;
-            _emailSender = emailSender;
+            _emailSender=emailSender;
         }
         public IActionResult Index()
         {
-            _logger.LogInformation($"time - {DateTime.Now.ToShortTimeString()};path -  {HttpContext.Request.Host}{HttpContext.Request.Path}{HttpContext.Request.QueryString}; remoteIP -  {_contextAccessor?.HttpContext?.Connection.RemoteIpAddress}");
-
             return View();
         }
 
         public IActionResult About()
         {
-            _logger.LogInformation($"time - {DateTime.Now.ToShortTimeString()};path -  {HttpContext.Request.Host}{HttpContext.Request.Path}{HttpContext.Request.QueryString}; remoteIP -  {_contextAccessor?.HttpContext?.Connection.RemoteIpAddress}");
-
             return View();
         }
 
         public IActionResult Brand()
         {
-            _logger.LogInformation($"time - {DateTime.Now.ToShortTimeString()};path -  {HttpContext.Request.Host}{HttpContext.Request.Path}{HttpContext.Request.QueryString}; remoteIP -  {_contextAccessor?.HttpContext?.Connection.RemoteIpAddress}");
-
             return View();
         }
 
         public IActionResult Specials()
         {
-            _logger.LogInformation($"time - {DateTime.Now.ToShortTimeString()};path -  {HttpContext.Request.Host}{HttpContext.Request.Path}{HttpContext.Request.QueryString}; remoteIP -  {_contextAccessor?.HttpContext?.Connection.RemoteIpAddress}");
-
             return View();
         }
 
         public IActionResult Contact()
-        {
-            _logger.LogInformation($"time - {DateTime.Now.ToShortTimeString()};path -  {HttpContext.Request.Host}{HttpContext.Request.Path}{HttpContext.Request.QueryString}; remoteIP -  {_contextAccessor?.HttpContext?.Connection.RemoteIpAddress}");
-
+        {      
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> SendMessage(MailData mailData)
         {
-            _logger.LogInformation($"time - {DateTime.Now.ToShortTimeString()};path -  {HttpContext.Request.Host}{HttpContext.Request.Path}{HttpContext.Request.QueryString}; remoteIP -  {_contextAccessor?.HttpContext?.Connection.RemoteIpAddress}");
-
             string message = $"Hi, its {mailData.Name}!\n{mailData.Message}\nMy phone is: {mailData.Phone}, email: {mailData.Email}";
             await _emailSender.SendEmailAsync("matyiokin2002@gmail.com", "LAB2", message);
             return RedirectToAction("Index");
