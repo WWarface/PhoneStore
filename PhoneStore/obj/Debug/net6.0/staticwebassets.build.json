@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VzYcWtYvpKRv7/qwWVndiyazl3pt9CAvMhHS05nEUYU=",
+  "Hash": "J+kvYw/Y7JqbRZngyDLrBjlUU8fbuOs9l2Ld6TNPUbA=",
   "Source": "PhoneStore",
   "BasePath": "_content/PhoneStore",
   "Mode": "Default",
@@ -236,6 +236,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\Haritone\\source\\repos\\PhoneStore\\PhoneStore\\wwwroot\\Files\\6 Шульга.pdf",
+      "SourceId": "PhoneStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Haritone\\source\\repos\\PhoneStore\\PhoneStore\\wwwroot\\",
+      "BasePath": "_content/PhoneStore",
+      "RelativePath": "Files/6 Шульга.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\6 Шульга.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\Haritone\\source\\repos\\PhoneStore\\PhoneStore\\wwwroot\\Files\\Снимок.PNG",
+      "SourceId": "PhoneStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Haritone\\source\\repos\\PhoneStore\\PhoneStore\\wwwroot\\",
+      "BasePath": "_content/PhoneStore",
+      "RelativePath": "Files/Снимок.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Files\\Снимок.PNG"
     },
     {
       "Identity": "C:\\Users\\Haritone\\source\\repos\\PhoneStore\\PhoneStore\\wwwroot\\icon\\call.png",
