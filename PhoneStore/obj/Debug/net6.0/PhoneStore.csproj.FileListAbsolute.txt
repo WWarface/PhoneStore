@@ -37,3 +37,13 @@ C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\MailKit.pd
 C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\MailKit.xml
 C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\BouncyCastle.Crypto.xml
 C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.csproj.CopyComplete
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\en\PhoneStore.resources.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\ru\PhoneStore.resources.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\uk\PhoneStore.resources.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.csproj.GenerateResource.cache
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\en\PhoneStore.resources.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\ru\PhoneStore.resources.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\uk\PhoneStore.resources.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.Resources.Views.Shared._Layout.en.resources
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.Resources.Views.Shared._Layout.ru.resources
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.Resources.Views.Shared._Layout.uk.resources

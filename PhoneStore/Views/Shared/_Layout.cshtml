@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -50,14 +52,15 @@
                             <div class="limit-box">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
-                                        <li class="active"> <a href='@Url.Action("Index", "Home")'>Home</a> </li>
-                                        <li> <a href='@Url.Action("About", "Home")'>About</a> </li>
-                                        <li><a href='@Url.Action("Brand", "Home")'>Brand</a></li>
-                                        <li><a href='@Url.Action("Specials", "Home")'>Specials</a></li>
-                                        <li><a href='@Url.Action("Contact", "Home")'>Contact Us</a></li>
+                                        <li class="active"> <a href='@Url.Action("Index", "Home")'>@Localizer["Home"]</a> </li>
+                                        <li> <a href='@Url.Action("About", "Home")'>@Localizer["About"]</a> </li>
+                                        <li><a href='@Url.Action("Brand", "Home")'>@Localizer["Brand"]</a></li>
+                                        <li><a href='@Url.Action("Specials", "Home")'>@Localizer["Specials"]</a></li>
+                                        <li><a href='@Url.Action("Contact", "Home")'>@Localizer["Contact Us"]</a></li>
                                         <li class="last">
                                             <a href='@Url.Action("FileLoad", "Home")'><img src="~/images/search_icon.png" alt="icon" /></a>
                                         </li>
+                                        <li>@await Html.PartialAsync("_SelectLanguagePartial")</li>
                                     </ul>
                                 </nav>
                             </div>
@@ -77,7 +80,6 @@
         </div>
 
     </header>
-
     @RenderBody();
   <footer>
         <div id="contact" class="footer">
