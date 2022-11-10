@@ -12,6 +12,17 @@
         },
         "runtime": {
           "PhoneStore.dll": {}
+        },
+        "resources": {
+          "en/PhoneStore.resources.dll": {
+            "locale": "en"
+          },
+          "ru/PhoneStore.resources.dll": {
+            "locale": "ru"
+          },
+          "uk/PhoneStore.resources.dll": {
+            "locale": "uk"
+          }
         }
       },
       "PhoneStore.Services/1.0.0": {
