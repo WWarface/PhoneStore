@@ -1,9 +1,14 @@
+using FluentValidation;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Options;
 using PhoneStore;
+using PhoneStore.Models;
 using PhoneStore.Services;
+using PhoneStore.Validation;
+using System;
 using System.Globalization;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +17,7 @@ builder.Services.AddTransient<IEmailSender, EmailSender>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Logging.AddFile(Path.Combine(Directory.GetCurrentDirectory() + "/Logs/", "logger.txt"));
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+builder.Services.AddScoped<IValidator<User>, UserValidator>();
 
 builder.Services.Configure<RequestLocalizationOptions>(options =>
 {

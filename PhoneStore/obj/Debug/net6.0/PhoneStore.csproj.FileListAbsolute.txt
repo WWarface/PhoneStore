@@ -44,6 +44,10 @@ C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore
 C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\en\PhoneStore.resources.dll
 C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\ru\PhoneStore.resources.dll
 C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\uk\PhoneStore.resources.dll
-C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.Resources.Views.Shared._Layout.en.resources
-C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.Resources.Views.Shared._Layout.ru.resources
-C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.Resources.Views.Shared._Layout.uk.resources
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.Resources.Views.Home.Components.NavBar.Default.en.resources
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.Resources.Views.Home.Components.NavBar.Default.ru.resources
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.Resources.Views.Home.Components.NavBar.Default.uk.resources
+C:\Users\Haritone\source\repos\PhoneStore\PhoneStore\obj\Debug\net6.0\PhoneStore.MvcApplicationPartsAssemblyInfo.cs
