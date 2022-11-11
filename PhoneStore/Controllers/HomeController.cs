@@ -1,8 +1,12 @@
-﻿using Microsoft.AspNetCore.Localization;
+﻿using FluentValidation;
+using FluentValidation.Results;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using PhoneStore.Models;
 using PhoneStore.Services;
+using System;
 using System.Text;
+using FluentValidation.AspNetCore;
 
 namespace WebServicesProject.Controllers
 {
@@ -11,12 +15,15 @@ namespace WebServicesProject.Controllers
         private readonly IEmailSender _emailSender;
         private readonly ILogger<HomeController> _logger;
         private readonly IHttpContextAccessor _contextAccessor;
-        public HomeController(IEmailSender emailSender, ILogger<HomeController> logger, IHttpContextAccessor contextAccessor)
+        private IValidator<User> _validator;
+        public HomeController(IEmailSender emailSender, ILogger<HomeController> logger, IHttpContextAccessor contextAccessor, IValidator<User> validator)
         {
             _contextAccessor = contextAccessor;
             _logger = logger;
             _emailSender = emailSender;
+            _validator = validator;
         }
+
         public IActionResult Index()
         {
             _logger.LogInformation($"time - {DateTime.Now.ToShortTimeString()};path -  {HttpContext.Request.Host}{HttpContext.Request.Path}{HttpContext.Request.QueryString}; remoteIP -  {_contextAccessor?.HttpContext?.Connection.RemoteIpAddress}");
@@ -98,6 +105,34 @@ namespace WebServicesProject.Controllers
             );
 
             return LocalRedirect(returnUrl);
+        }
+
+
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(User user)
+        {
+            ValidationResult result = await _validator.ValidateAsync(user);
+
+            if (!result.IsValid)
+            {
+                // Copy the validation results into ModelState.
+                // ASP.NET uses the ModelState collection to populate 
+                // error messages in the View.
+                result.AddToModelState(this.ModelState);
+
+                // re-render the view when validation failed.
+                return View("Create", user);
+            }
+
+            return RedirectToAction("Index");
+
         }
     }
 }

@@ -11,7 +11,7 @@
                     {        
                         
                         if(key=="Home"){
-                            <li class="active"> <a href='@Url.Action($"{key}", "Home")'>@Localizer[$"{key}"]</a> </li>
+                            <li class="active"> <a href='@Url.Action("Index", "Home")'>@Localizer[$"{key}"]</a> </li>
                         }else{
                             <li> <a href='@Url.Action($"{key}", "Home")'>@Localizer[$"{key}"]</a> </li>
                         }                  
