@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@model IEnumerable<string>
+@inject IViewLocalizer Localizer
+
+<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+    <div class="menu-area">
+        <div class="limit-box">
+            <nav class="main-menu">
+                <ul class="menu-area-main">                    
+                    @foreach (var key in Model)
+                    {        
+                        
+                        if(key=="Home"){
+                            <li class="active"> <a href='@Url.Action($"{key}", "Home")'>@Localizer[$"{key}"]</a> </li>
+                        }else{
+                            <li> <a href='@Url.Action($"{key}", "Home")'>@Localizer[$"{key}"]</a> </li>
+                        }                  
+
+                    }
+                    <li class="last">
+                        <a href='@Url.Action("FileLoad", "Home")'><img src="~/images/search_icon.png" alt="icon" /></a>
+                    </li>
+                    <li>@await Html.PartialAsync("_SelectLanguagePartial")</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
