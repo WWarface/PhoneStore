@@ -121,15 +121,15 @@
     <value>Про нас</value>
   </data>
   <data name="Brand" xml:space="preserve">
-    <value>Компанія</value>
+    <value>Компания</value>
   </data>
-  <data name="Contact Us" xml:space="preserve">
-    <value>Зв'язок</value>
+  <data name="Contact" xml:space="preserve">
+    <value>Связь</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>Головна</value>
+    <value>Главная</value>
   </data>
   <data name="Specials" xml:space="preserve">
-    <value>Додаткове</value>
+    <value>Дополнительное</value>
   </data>
 </root>
