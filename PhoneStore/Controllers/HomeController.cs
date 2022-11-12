@@ -122,12 +122,9 @@ namespace WebServicesProject.Controllers
 
             if (!result.IsValid)
             {
-                // Copy the validation results into ModelState.
-                // ASP.NET uses the ModelState collection to populate 
-                // error messages in the View.
                 result.AddToModelState(this.ModelState);
 
-                // re-render the view when validation failed.
+
                 return View("Create", user);
             }
 

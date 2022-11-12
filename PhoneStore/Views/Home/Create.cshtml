@@ -58,12 +58,12 @@
 
 <div asp-validation-summary="ModelOnly"></div>
 <div style="display:flex;justify-content:center; margin-top:100px">
-    <form asp-action="Create">
-        <input placeholder="Name" class="input" name="text" type="text" input asp-for="FirstName" /><span asp-validation-for="FirstName"></span><br /><br />
-        <input placeholder="Last Name" class="input" name="text" type="text" input asp-for="LastName" /><span asp-validation-for="LastName"></span><br /><br />
-        <input placeholder="Email" class="input" name="text" type="text" input asp-for="Email" /><span asp-validation-for="Email"></span><br /><br />
-        <input placeholder="Age" class="input" name="text" type="text" input asp-for="Age" /><span asp-validation-for="Age"></span><br /><br />
-        <input placeholder="Phone" class="input" name="text" type="text" input asp-for="Phone" /><span asp-validation-for="Phone"></span><br /><br />
+    <form method="post" asp-action="Create" asp-controller="Home">
+        <input placeholder="Name" class="input" name="FirstName" type="text" input asp-for="FirstName" /><span asp-validation-for="FirstName"></span><br /><br />
+        <input placeholder="Last Name" class="input" name="LastName" type="text" input asp-for="LastName" /><span asp-validation-for="LastName"></span><br /><br />
+        <input placeholder="Email" class="input" name="Email" type="text" input asp-for="Email" /><span asp-validation-for="Email"></span><br /><br />
+        <input placeholder="Age" class="input" name="Age" type="text" input asp-for="Age" /><span asp-validation-for="Age"></span><br /><br />
+        <input placeholder="Phone" class="input" name="Phone" type="text" input asp-for="Phone" /><span asp-validation-for="Phone"></span><br /><br />
 
         <br /><br />
         <div style="display:flex; justify-content:center"><div><input type="submit" value="submit"  class="MegaButton"></div></div>
