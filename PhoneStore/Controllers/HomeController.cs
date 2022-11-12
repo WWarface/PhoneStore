@@ -7,6 +7,7 @@ using PhoneStore.Services;
 using System;
 using System.Text;
 using FluentValidation.AspNetCore;
+using Microsoft.Extensions.Localization;
 
 namespace WebServicesProject.Controllers
 {
@@ -16,6 +17,8 @@ namespace WebServicesProject.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IHttpContextAccessor _contextAccessor;
         private IValidator<User> _validator;
+        private readonly IStringLocalizer _stringLocalizer;
+
         public HomeController(IEmailSender emailSender, ILogger<HomeController> logger, IHttpContextAccessor contextAccessor, IValidator<User> validator)
         {
             _contextAccessor = contextAccessor;

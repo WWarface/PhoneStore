@@ -8,9 +8,9 @@ namespace PhoneStore.Validation
         public UserValidator()
         {
             RuleFor(c => c.FirstName).NotEmpty().Length(4, 12);
-            RuleFor(c => c.Age).GreaterThan(10).NotEmpty().WithMessage("Age is required field!!!");
-            RuleFor(c => c.LastName).NotEmpty();
-            RuleFor(c=>c.Email).NotEmpty().EmailAddress();
+            RuleFor(c => c.Age).NotEmpty().WithMessage("Wrong number");
+            RuleFor(c => c.LastName).Matches("[A-Za-zА-Яа-я]").NotEmpty();
+            RuleFor(c=>c.Email).NotEmpty().WithMessage("Wrong number").EmailAddress();
             RuleFor(c=>c.Phone).Length(4, 12).NotNull().NotEmpty();
         }
     }
